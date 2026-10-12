@@ -1,0 +1,48 @@
+
+body {
+    background-color: lightyellow;
+    font-family: Arial;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: darkblue;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+h2 {
+    color: darkgreen;
+    background-color: aliceblue;
+}
+
+h3 {
+    color: brown;
+}
+
+img {
+    border: 2px solid black;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border: 1px solid black;
+}
+
+input, select {
+    padding: 8px;
+}
+
+input[type="submit"] {
+    background-color: lightgreen;
+    cursor: pointer;
+}
