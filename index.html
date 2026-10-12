@@ -1,108 +1,138 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Travel and Tourism</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderly | Explore the World</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <div class="navbar">
-        <h2>Travel World</h2>
-        <a href="#home">Home</a>
-        <a href="#places">Destinations</a>
-        <a href="#contact">Contact</a>
-        <a href="#booking">Booking</a>
-    </div>
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Wander<span>ly.</span></a>
 
-    <!-- Home Section -->
-    <div id="home">
-        <h1>Travel and Tourism</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+            </ul>
 
-        <p>Welcome to my travel website. Explore some beautiful
-        places in India and plan your next holiday.</p>
-    </div>
+            <a href="#contact" class="nav-btn">Contact Us</a>
+        </nav>
+    </header>
 
-    <hr>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">YOUR JOURNEY BEGINS HERE</p>
 
-    <!-- Destinations -->
-    <div id="places">
-        <h2>Famous Tourist Places in India</h2>
+            <h1>
+                Explore the World,<br>
+                <span>One Trip at a Time.</span>
+            </h1>
 
-        <h3>1. Manali</h3>
-        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500"
-             width="300" alt="Manali mountains">
+            <p class="hero-text">
+                Discover breathtaking destinations, experience new cultures,
+                and create memories that last forever.
+            </p>
 
-        <p>Manali is a beautiful hill station in Himachal Pradesh.
-        It is famous for its mountains, snow and natural beauty.</p>
+            <div class="hero-buttons">
+                <a href="#destinations" class="btn primary-btn">
+                    Explore Destinations ↗
+                </a>
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Us
+                </a>
+            </div>
 
-        <h3>2. Goa</h3>
-        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500"
-             width="300" alt="Goa beach">
+            <div class="travel-stats">
+                <div>
+                    <h3>50+</h3>
+                    <p>Destinations</p>
+                </div>
+                <div>
+                    <h3>2K+</h3>
+                    <p>Happy Travelers</p>
+                </div>
+                <div>
+                    <h3>100+</h3>
+                    <p>Travel Experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p>Goa is famous for its beaches, churches and holiday destinations.</p>
+    <!-- Destinations Section -->
+    <section class="destinations section" id="destinations">
+        <div class="section-heading">
+            <p class="tagline">FIND YOUR NEXT ADVENTURE</p>
+            <h2>Popular Destinations</h2>
+            <p>Explore some of the most beautiful places on Earth.</p>
+        </div>
 
-        <h3>3. Jaipur</h3>
-        <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=500"
-             width="300" alt="Hawa Mahal Jaipur">
+        <div class="destination-grid">
 
-        <p>Jaipur is known as the Pink City. It is famous for its
-        forts, palaces and historical buildings.</p>
-    </div>
+            <!-- Destination 1 -->
+            <div class="destination-card bali">
+                <div class="card-info">
+                    <p>INDONESIA</p>
+                    <h3>Bali</h3>
+                    <span>Explore Paradise ↗</span>
+                </div>
+            </div>
 
-    <hr>
+            <!-- Destination 2 -->
+            <div class="destination-card swiss">
+                <div class="card-info">
+                    <p>SWITZERLAND</p>
+                    <h3>Swiss Alps</h3>
+                    <span>Explore Mountains ↗</span>
+                </div>
+            </div>
+
+            <!-- Destination 3 -->
+            <div class="destination-card himachal">
+                <div class="card-info">
+                    <p>INDIA</p>
+                    <h3>Himachal Pradesh</h3>
+                    <span>Explore Hills ↗</span>
+                </div>
+            </div>
+
+            <!-- Destination 4: Centered -->
+            <div class="destination-card kedarnath">
+                <div class="card-info">
+                    <p>UTTARAKHAND, INDIA</p>
+                    <h3>Kedarnath</h3>
+                    <span>Explore the Himalayas ↗</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- Contact Section -->
-    <div id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: travel@example.com</p>
-    </div>
+    <section class="cta" id="contact">
+        <p class="tagline">YOUR NEXT CHAPTER AWAITS</p>
+        <h2>The World Is Waiting for You.</h2>
+        <p>Let's plan a trip you'll remember forever.</p>
 
-    <hr>
-
-    <!-- Booking Form -->
-    <div id="booking">
-        <h2>Travel Booking Form</h2>
-
-        <form>
-            <label>Name:</label><br>
-            <input type="text" name="name" required>
-            <br><br>
-
-            <label>Email:</label><br>
-            <input type="email" name="email" required>
-            <br><br>
-
-            <label>Choose Destination:</label><br>
-            <select name="destination">
-                <option>Manali</option>
-                <option>Goa</option>
-                <option>Jaipur</option>
-            </select>
-            <br><br>
-
-            <label>Travel Type:</label><br>
-            <input type="radio" name="travel" value="Family">
-            Family
-
-            <input type="radio" name="travel" value="Friends">
-            Friends
-            <br><br>
-
-            <label>Travel Date:</label><br>
-            <input type="date" name="date">
-            <br><br>
-
-            <input type="submit" value="Book Now">
-        </form>
-    </div>
+        <a href="mailto:hello@wanderly.example" class="btn cta-btn">
+            Contact Us ↗
+        </a>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <h3>Travel World</h3>
-        <p>Explore new places and make beautiful memories.</p>
-        <p>&copy; 2026 Travel World. All rights reserved.</p>
+        <a href="#home" class="logo">Wander<span>ly.</span></a>
+        <p>Making every journey unforgettable.</p>
+        <p class="copyright">© 2026 Wanderly. All rights reserved.</p>
     </footer>
 
 </body>
